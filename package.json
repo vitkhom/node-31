@@ -1,0 +1,28 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "Node.js course homeworks prepared by Vitalii Khomenko",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitkhom/node-31.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitkhom/node-31/issues"
+  },
+  "homepage": "https://github.com/vitkhom/node-31#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "uuid": "^8.3.1",
+    "yargs": "^16.0.3"
+  }
+}
