@@ -7,7 +7,7 @@ const contactsPath = path.join("db", "contacts.json");
 
 const fsPromise = fs.promises;
 
-module.exports = class UserController {
+module.exports = class ContactController {
   static listContacts(req, res) {
     res.status(200).json(db);
   }
