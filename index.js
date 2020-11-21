@@ -4,12 +4,14 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 dotenv.config();
+mongoose.set("useFindAndModify", false);
 
-const contactsRouter = require("./contacts/contact.router");
+// const contactsRouter = require("./contacts/contact.router");
+const userRouter = require("./user/user.router");
 
 let app;
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 start();
 
@@ -38,7 +40,8 @@ async function connectDb() {
 }
 
 function initRouts() {
-  app.use("/api/contacts", contactsRouter);
+  app.use("/", userRouter);
+  // app.use("/api/contacts", contactsRouter);
 }
 
 function listen() {
